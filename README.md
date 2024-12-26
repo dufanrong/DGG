@@ -15,7 +15,7 @@ DGG consists of two main components:
     - Generates multiple call graphs and merges them into a small-scale service dependency graph that reflects production-level characteristics.
 
 ## Overview
-![DGG Overview](./docs/DGG_overview.pdf)
+![DGG Overview](https://github.com/dufanrong/DGG/blob/main/docs/DGG_overview.pdf)
 
 ## Quick Start
 In the `sample_data` folder, we provide real microservice call graphs constructed using Alibaba trace data. You can use this dataset directly to generate simulated dependency graphs and microservice call graphs. 
