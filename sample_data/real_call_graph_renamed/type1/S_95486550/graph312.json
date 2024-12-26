@@ -1,0 +1,181 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.2_func726",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.1_func721",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func722",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func723",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func724",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func725",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func727",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func728",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func729",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func730",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func731",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func732",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func733",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func734",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func735",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func736",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.2_func726",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func721",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func722",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func723",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func724",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func725",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func727",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func728",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func729",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func730",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func731",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func732",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func733",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func734",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func735",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func736",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 29
+}

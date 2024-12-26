@@ -1,0 +1,81 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.1_func124",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func219",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func223",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func9",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func222",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func514",
+            "label": "normal"
+        },
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func124",
+            "weight": 5,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func219",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func223",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func9",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func222",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func514",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

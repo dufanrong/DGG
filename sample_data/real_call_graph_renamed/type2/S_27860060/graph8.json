@@ -1,0 +1,101 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+4.1_func2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_Memcached.3",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_blackhole.1_func2",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_Memcached.2",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_Memcached.1",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_normal+2.2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.2_func2",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+2.1_func1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.1_func3",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.2",
+            "target": "MS_normal+2.1_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1_func1",
+            "target": "MS_normal+4.1_func2",
+            "weight": 6,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1_func1",
+            "target": "MS_Memcached.3",
+            "weight": 19,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+2.1_func1",
+            "target": "MS_blackhole.1_func2",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1_func1",
+            "target": "MS_blackhole.2_func2",
+            "weight": 12,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1_func1",
+            "target": "MS_normal+2.1_func3",
+            "weight": 20,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1_func3",
+            "target": "MS_Memcached.2",
+            "weight": 17,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+2.1_func3",
+            "target": "MS_Memcached.1",
+            "weight": 74,
+            "rpctype": "mc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.2",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

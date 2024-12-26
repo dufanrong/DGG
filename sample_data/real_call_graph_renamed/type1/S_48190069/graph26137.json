@@ -1,0 +1,91 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.2_func2064",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.2_func1297",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.2_func1220",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.2_func72",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.2_func1448",
+            "label": "normal"
+        },
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "MS_blackhole.2_func279",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.1_func341",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.2_func1297",
+            "target": "MS_normal+3.1_func341",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.2_func2064",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.2_func1297",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.2_func1220",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.2_func72",
+            "weight": 5,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.2_func1448",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.2_func279",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

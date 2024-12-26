@@ -1,0 +1,101 @@
+{
+    "nodes": [
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "MS_normal+3.1_func599",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func352",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func132",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func19",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func143",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func26",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func18",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func596",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func599",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func352",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func132",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func143",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func26",
+            "weight": 5,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func596",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func599",
+            "target": "MS_normal+3.1_func19",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func596",
+            "target": "MS_normal+3.1_func18",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

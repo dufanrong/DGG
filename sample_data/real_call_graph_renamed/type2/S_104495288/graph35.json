@@ -1,0 +1,87 @@
+{
+    "nodes": [
+        {
+            "node": "MS_database.3",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+2.2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+3.1_func1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+4.3_func5",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+4.2_func3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_Memcached.2",
+            "label": "Memcached"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.2",
+            "target": "MS_normal+3.1_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.2",
+            "target": "MS_Memcached.2",
+            "weight": 5,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.1_func1",
+            "target": "MS_normal+4.3_func5",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+4.3_func5",
+            "target": "MS_database.3",
+            "weight": 4,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+4.3_func5",
+            "target": "MS_database.1",
+            "weight": 4,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+4.3_func5",
+            "target": "MS_normal+4.2_func3",
+            "weight": 2,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+4.3_func5",
+            "target": "MS_Memcached.2",
+            "weight": 2,
+            "rpctype": "mc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.2",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 165
+}

@@ -1,0 +1,161 @@
+{
+    "nodes": [
+        {
+            "node": "MS_blackhole.1_func3",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.6_func102",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.8_func9",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_Memcached.1",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_database.8",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+4.9_func123",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.10_func25",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.10_func66",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.10_func103",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.15_func124",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.13_func53",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.12_func26",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+4.3_func17",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+4.9_func123",
+            "target": "MS_blackhole.8_func9",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+4.9_func123",
+            "target": "MS_Memcached.1",
+            "weight": 2,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+4.9_func123",
+            "target": "MS_blackhole.13_func53",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+4.9_func123",
+            "target": "MS_normal+4.3_func17",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.1_func3",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.6_func102",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.10_func25",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.10_func103",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.15_func124",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.12_func26",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.10_func66",
+            "target": "MS_database.1",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.10_func66",
+            "target": "MS_database.8",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.15_func124",
+            "target": "MS_normal+4.9_func123",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.12_func26",
+            "target": "MS_normal+3.10_func66",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

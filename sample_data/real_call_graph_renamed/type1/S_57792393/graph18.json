@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "node": "MS_blackhole.1",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.2_func3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.3",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.1",
+            "weight": 1,
+            "rpctype": "mq"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.2_func3",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.3",
+            "weight": 3,
+            "rpctype": "mq"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 9
+}

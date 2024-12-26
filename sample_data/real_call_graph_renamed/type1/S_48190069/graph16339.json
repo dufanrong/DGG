@@ -1,0 +1,141 @@
+{
+    "nodes": [
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "MS_blackhole.2_func929",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.1_func1226",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func144",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func592",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func28",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func21",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func1597",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func929",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func24",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func12",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func2325",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func628",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.2_func929",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func1226",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func592",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func21",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func1597",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func929",
+            "weight": 4,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func24",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func2325",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.1_func628",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func1597",
+            "target": "MS_normal+3.1_func12",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func2325",
+            "target": "MS_normal+3.1_func144",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func628",
+            "target": "MS_normal+3.1_func28",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.10",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.3",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_normal+3.10",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.3",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 91
+}

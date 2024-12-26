@@ -1,0 +1,143 @@
+{
+    "nodes": [
+        {
+            "node": "MS_Memcached.4",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_normal+3.1_func6",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func4",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_Memcached.2",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_database.4",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+4.1_func3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+4.1_func7",
+            "label": "normal"
+        },
+        {
+            "node": "MS_Memcached.3",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_Memcached.1",
+            "label": "Memcached"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.1_func6",
+            "target": "MS_normal+3.1_func2",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func6",
+            "target": "MS_normal+3.1_func4",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func6",
+            "target": "MS_normal+4.1_func3",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func6",
+            "target": "MS_normal+4.1_func7",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func6",
+            "target": "MS_Memcached.3",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.1_func2",
+            "target": "MS_Memcached.3",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.1_func4",
+            "target": "MS_Memcached.4",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+2.2",
+            "target": "MS_normal+3.1_func6",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.2",
+            "target": "MS_Memcached.1",
+            "weight": 2,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_database.4",
+            "target": "MS_database.1",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+4.1_func3",
+            "target": "MS_Memcached.4",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+4.1_func3",
+            "target": "MS_Memcached.2",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+4.1_func3",
+            "target": "MS_database.4",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.2",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

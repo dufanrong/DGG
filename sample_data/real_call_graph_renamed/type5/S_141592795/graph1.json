@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "node": "MS_blackhole.1",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+2.1_func1",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.1_func1",
+            "target": "MS_blackhole.1",
+            "weight": 1,
+            "rpctype": "mq"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        }
+    ],
+    "num": 21027
+}

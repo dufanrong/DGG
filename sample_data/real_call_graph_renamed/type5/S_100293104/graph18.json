@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_relay+2.17",
+            "label": "relay"
+        },
+        {
+            "node": "MS_database.16",
+            "label": "database"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.17",
+            "target": "MS_database.1",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+2.17",
+            "target": "MS_database.16",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.17",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 4059
+}

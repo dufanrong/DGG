@@ -1,0 +1,91 @@
+{
+    "nodes": [
+        {
+            "node": "MS_blackhole.1_func3",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.8_func9",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_blackhole.2_func2",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.3_func24",
+            "label": "normal"
+        },
+        {
+            "node": "MS_database.4",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+4.1_func44",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.1_func3",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.2_func2",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.3_func24",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.3_func24",
+            "target": "MS_blackhole.8_func9",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.3_func24",
+            "target": "MS_normal+4.1_func44",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+4.1_func44",
+            "target": "MS_database.1",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+4.1_func44",
+            "target": "MS_database.4",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 2
+}

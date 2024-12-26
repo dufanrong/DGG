@@ -1,0 +1,121 @@
+{
+    "nodes": [
+        {
+            "node": "MS_database.3",
+            "label": "database"
+        },
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_blackhole.4_func3",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.4_func1",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.4_func6",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.4_func8",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.6_func6",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.7_func2",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.3_func73",
+            "label": "normal"
+        },
+        {
+            "node": "MS_relay+4.1_func76",
+            "label": "relay"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.4_func3",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.4_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.4_func6",
+            "weight": 3,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.4_func8",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.6_func6",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.7_func2",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.3_func73",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.3_func73",
+            "target": "MS_relay+4.1_func76",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+4.1_func76",
+            "target": "MS_database.3",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+4.1_func76",
+            "target": "MS_database.1",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "node": "MS_Memcached.1",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_database.3",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+3.1_func1",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.1_func1",
+            "target": "MS_Memcached.1",
+            "weight": 3,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.1_func1",
+            "target": "MS_database.3",
+            "weight": 3,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+3.1_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        }
+    ],
+    "num": 12811
+}

@@ -1,0 +1,91 @@
+{
+    "nodes": [
+        {
+            "node": "MS_Memcached.3",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_normal+4.12_func159",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+4.12_func91",
+            "label": "normal"
+        },
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "MS_Memcached.16",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_Memcached.2",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_normal+3.10_func26",
+            "label": "normal"
+        },
+        {
+            "node": "MS_Memcached.1",
+            "label": "Memcached"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.10_func26",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_Memcached.1",
+            "weight": 2,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.10_func26",
+            "target": "MS_Memcached.3",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.10_func26",
+            "target": "MS_normal+4.12_func159",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.10_func26",
+            "target": "MS_normal+4.12_func91",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.10_func26",
+            "target": "MS_Memcached.16",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.10_func26",
+            "target": "MS_Memcached.2",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

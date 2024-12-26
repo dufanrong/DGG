@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "node": "MS_blackhole.101",
+            "label": "blackhole"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "USER",
+            "target": "MS_blackhole.101",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 207
+}

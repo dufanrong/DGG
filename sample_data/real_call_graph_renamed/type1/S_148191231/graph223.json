@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+5.8_func153",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.36_func154",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_relay+4.6_func155",
+            "label": "relay"
+        },
+        {
+            "node": "MS_Memcached.1",
+            "label": "Memcached"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.36_func154",
+            "target": "MS_relay+4.6_func155",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.36_func154",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_Memcached.1",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_relay+4.6_func155",
+            "target": "MS_normal+5.8_func153",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

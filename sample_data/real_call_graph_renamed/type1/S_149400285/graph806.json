@@ -1,0 +1,165 @@
+{
+    "nodes": [
+        {
+            "node": "MS_database.13",
+            "label": "database"
+        },
+        {
+            "node": "MS_Memcached.1",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+2.5",
+            "label": "normal"
+        },
+        {
+            "node": "MS_relay+3.1_func84",
+            "label": "relay"
+        },
+        {
+            "node": "MS_relay+3.1_func131",
+            "label": "relay"
+        },
+        {
+            "node": "MS_relay+3.1_func85",
+            "label": "relay"
+        },
+        {
+            "node": "MS_relay+3.1_func132",
+            "label": "relay"
+        },
+        {
+            "node": "MS_relay+3.1_func86",
+            "label": "relay"
+        },
+        {
+            "node": "MS_normal+3.19_func133",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_Memcached.1",
+            "target": "MS_Memcached.1",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+2.5",
+            "target": "MS_relay+3.1_func84",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.5",
+            "target": "MS_relay+3.1_func131",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.5",
+            "target": "MS_relay+3.1_func85",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.5",
+            "target": "MS_relay+3.1_func132",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.5",
+            "target": "MS_relay+3.1_func86",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.5",
+            "target": "MS_normal+3.19_func133",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+3.1_func84",
+            "target": "MS_database.13",
+            "weight": 3,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+3.1_func84",
+            "target": "MS_Memcached.1",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_relay+3.1_func84",
+            "target": "MS_database.1",
+            "weight": 3,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+3.1_func131",
+            "target": "MS_Memcached.1",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_relay+3.1_func85",
+            "target": "MS_database.13",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+3.1_func85",
+            "target": "MS_Memcached.1",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_relay+3.1_func85",
+            "target": "MS_database.1",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+3.1_func132",
+            "target": "MS_database.13",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+3.1_func132",
+            "target": "MS_database.1",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+3.1_func86",
+            "target": "MS_Memcached.1",
+            "weight": 1,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.19_func133",
+            "target": "MS_Memcached.1",
+            "weight": 2,
+            "rpctype": "mc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.5",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

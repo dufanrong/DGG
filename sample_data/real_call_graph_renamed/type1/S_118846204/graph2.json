@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.2_func1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.2_func2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_relay+2.2",
+            "label": "relay"
+        },
+        {
+            "node": "MS_blackhole.2_func1",
+            "label": "blackhole"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.2",
+            "target": "MS_normal+3.2_func1",
+            "weight": 855,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.2",
+            "target": "MS_normal+3.2_func2",
+            "weight": 76,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.2",
+            "target": "MS_database.1",
+            "weight": 347,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_relay+2.2",
+            "target": "MS_blackhole.2_func1",
+            "weight": 5,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.2",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

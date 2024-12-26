@@ -1,0 +1,117 @@
+{
+    "nodes": [
+        {
+            "node": "MS_blackhole.1_func3",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.1_func1",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_blackhole.2_func2",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+2.3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_database.5",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+3.3_func51",
+            "label": "normal"
+        },
+        {
+            "node": "MS_database.4",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+4.1_func12",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+4.3_func28",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_blackhole.1_func3",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_blackhole.1_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_blackhole.2_func2",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_normal+3.3_func51",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.3_func51",
+            "target": "MS_normal+4.1_func12",
+            "weight": 3,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.3_func51",
+            "target": "MS_normal+4.3_func28",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+4.1_func12",
+            "target": "MS_database.1",
+            "weight": 5,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+4.1_func12",
+            "target": "MS_database.4",
+            "weight": 5,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+4.3_func28",
+            "target": "MS_database.1",
+            "weight": 3,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+4.3_func28",
+            "target": "MS_database.5",
+            "weight": 3,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.3",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

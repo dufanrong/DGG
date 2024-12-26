@@ -1,0 +1,97 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.12_func1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.1",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.19",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.2",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.2",
+            "target": "MS_normal+3.19",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+3.1",
+            "target": "MS_normal+3.12_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1",
+            "target": "MS_blackhole.1",
+            "weight": 1,
+            "rpctype": "mq"
+        },
+        {
+            "source": "MS_normal+3.19",
+            "target": "MS_normal+3.1",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.2",
+            "weight": 2,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.2",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+3.2",
+            "target": "MS_normal+3.2",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

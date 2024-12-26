@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "node": "MS_relay+2.6",
+            "label": "relay"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.6",
+            "target": "MS_database.1",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.6",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1799
+}

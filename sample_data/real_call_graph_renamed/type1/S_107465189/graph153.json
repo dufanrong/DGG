@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+4.3_func2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+5.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.5_func51",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.6_func50",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+4.3_func2",
+            "target": "MS_normal+5.1",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+3.5_func51",
+            "target": "MS_normal+4.3_func2",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.5_func51",
+            "target": "MS_blackhole.6_func50",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.5_func51",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 10
+}

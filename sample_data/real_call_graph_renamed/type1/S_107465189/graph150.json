@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.12_func126",
+            "label": "normal"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_database.8",
+            "label": "database"
+        },
+        {
+            "node": "MS_normal+3.10_func29",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.12_func126",
+            "target": "MS_database.1",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.12_func126",
+            "target": "MS_database.8",
+            "weight": 1,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.10_func29",
+            "target": "MS_normal+3.12_func126",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.10_func29",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 10
+}

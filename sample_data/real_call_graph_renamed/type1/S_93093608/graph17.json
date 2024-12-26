@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.8",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.15",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.3",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.16",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.8",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.15",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.3",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.16",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.2",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 85
+}

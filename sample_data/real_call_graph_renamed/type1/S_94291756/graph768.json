@@ -1,0 +1,77 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.17",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.5_func1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.3",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.3",
+            "target": "MS_normal+3.5_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.3",
+            "target": "MS_normal+3.3",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+3.17",
+            "target": "MS_normal+3.3",
+            "weight": 2,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_normal+3.3",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_normal+3.17",
+            "weight": 2,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_normal+3.3",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.3",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

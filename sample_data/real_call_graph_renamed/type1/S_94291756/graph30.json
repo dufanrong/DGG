@@ -1,0 +1,73 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.2",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.6",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.2",
+            "target": "MS_normal+3.1",
+            "weight": 2,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+3.1",
+            "target": "MS_normal+3.2",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+2.2",
+            "target": "MS_normal+3.6",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+3.6",
+            "target": "MS_normal+3.2",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+3.6",
+            "target": "MS_normal+3.2",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "MS_normal+3.6",
+            "target": "MS_normal+3.6",
+            "weight": 1,
+            "rpctype": "http"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.2",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 14
+}

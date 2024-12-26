@@ -1,0 +1,155 @@
+{
+    "nodes": [
+        {
+            "node": "MS_blackhole.3_func3",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.3_func1",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_Memcached.3",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_blackhole.2_func2",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.1_func65",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func5",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+2.3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.13_func82",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.15_func83",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.15_func82",
+            "label": "normal"
+        },
+        {
+            "node": "MS_database.7",
+            "label": "database"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.1_func65",
+            "target": "MS_normal+3.13_func82",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func65",
+            "target": "MS_normal+3.15_func83",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.1_func65",
+            "target": "MS_normal+3.15_func82",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_blackhole.3_func3",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_blackhole.3_func1",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_blackhole.2_func2",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_normal+3.1_func65",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.3",
+            "target": "MS_normal+3.1_func5",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+3.13_func82",
+            "target": "MS_database.1",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.13_func82",
+            "target": "MS_database.7",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.15_func83",
+            "target": "MS_Memcached.3",
+            "weight": 2,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+3.15_func83",
+            "target": "MS_database.1",
+            "weight": 22,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.15_func83",
+            "target": "MS_database.7",
+            "weight": 22,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.15_func82",
+            "target": "MS_database.1",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+3.15_func82",
+            "target": "MS_database.7",
+            "weight": 2,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.3",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 1
+}

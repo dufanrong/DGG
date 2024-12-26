@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "node": "MS_Memcached.2",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_normal+2.4",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.4",
+            "target": "MS_Memcached.2",
+            "weight": 3,
+            "rpctype": "mc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.4",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 23
+}

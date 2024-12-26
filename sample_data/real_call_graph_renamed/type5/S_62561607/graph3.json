@@ -1,0 +1,81 @@
+{
+    "nodes": [
+        {
+            "node": "MS_blackhole.1_func13",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.1_func14",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.1_func15",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.1_func16",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.1_func17",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.1_func18",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.1_func13",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.1_func14",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.1_func15",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.1_func16",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.1_func17",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.1_func18",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 9586
+}

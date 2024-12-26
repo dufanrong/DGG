@@ -1,0 +1,181 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+2.1",
+            "label": "normal"
+        },
+        {
+            "node": "MS_blackhole.2_func150",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_blackhole.2_func159",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.1_func145",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func146",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func147",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func148",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func149",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func151",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func152",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func153",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func154",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func155",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func156",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func157",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func158",
+            "label": "normal"
+        },
+        {
+            "node": "MS_normal+3.1_func160",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.2_func150",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_blackhole.2_func159",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func145",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func146",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func147",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func148",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func149",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func151",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func152",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func153",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func154",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func155",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func156",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func157",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func158",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+2.1",
+            "target": "MS_normal+3.1_func160",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_normal+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 41
+}

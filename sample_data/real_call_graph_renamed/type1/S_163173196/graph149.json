@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "node": "MS_normal+3.1_func71",
+            "label": "normal"
+        },
+        {
+            "node": "MS_relay+2.2",
+            "label": "relay"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_relay+2.2",
+            "target": "MS_normal+3.1_func71",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.2",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 449
+}

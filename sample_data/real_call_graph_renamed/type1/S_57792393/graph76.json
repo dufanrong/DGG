@@ -1,0 +1,81 @@
+{
+    "nodes": [
+        {
+            "node": "MS_Memcached.4",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_database.3",
+            "label": "database"
+        },
+        {
+            "node": "MS_database.1",
+            "label": "database"
+        },
+        {
+            "node": "MS_blackhole.1",
+            "label": "blackhole"
+        },
+        {
+            "node": "MS_normal+3.2_func3",
+            "label": "normal"
+        },
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "MS_normal+4.1_func2",
+            "label": "normal"
+        },
+        {
+            "node": "USER",
+            "label": "relay"
+        }
+    ],
+    "edges": [
+        {
+            "source": "MS_normal+3.2_func3",
+            "target": "MS_normal+4.1_func2",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_blackhole.1",
+            "weight": 1,
+            "rpctype": "mq"
+        },
+        {
+            "source": "MS_relay+2.1",
+            "target": "MS_normal+3.2_func3",
+            "weight": 1,
+            "rpctype": "rpc"
+        },
+        {
+            "source": "MS_normal+4.1_func2",
+            "target": "MS_Memcached.4",
+            "weight": 2,
+            "rpctype": "mc"
+        },
+        {
+            "source": "MS_normal+4.1_func2",
+            "target": "MS_database.3",
+            "weight": 4,
+            "rpctype": "db"
+        },
+        {
+            "source": "MS_normal+4.1_func2",
+            "target": "MS_database.1",
+            "weight": 4,
+            "rpctype": "db"
+        },
+        {
+            "source": "USER",
+            "target": "MS_relay+2.1",
+            "weight": 1,
+            "rpctype": "http"
+        }
+    ],
+    "num": 2
+}
