@@ -2,6 +2,7 @@
 
 The **Service Dependency Graph Generator (DGG)** is a tool designed to generate service dependency graphs with production-level characteristics from benchmark traces. It enables researchers and practitioners to simulate realistic microservice environments for performance evaluation and analysis. 
 
+## Overview
 DGG consists of two main components:
 
 1. **Data Handler**:
@@ -14,8 +15,8 @@ DGG consists of two main components:
     - Simulates real-world microservice invocation processes using a random graph model.
     - Generates multiple call graphs and merges them into a small-scale service dependency graph that reflects production-level characteristics.
 
-## Overview
-![DGG Overview](https://github.com/dufanrong/DGG/blob/main/docs/DGG_overview.png)
+<img src="https://github.com/dufanrong/DGG/blob/main/docs/DGG_overview.png" width="500" />
+
 
 ## Quick Start
 In the `sample_data` folder, we provide real microservice call graphs constructed using Alibaba trace data. You can use this dataset directly to generate simulated dependency graphs and microservice call graphs. 
