@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 directory = "./sample_data/data_origin"
-service_list_path = "./sample_data/service_info.csv"
+service_list_path = "./sample_data/traceid_num.csv"
 output_path = "./sample_data/service_original"
 
 if not os.path.exists(output_folder_path):

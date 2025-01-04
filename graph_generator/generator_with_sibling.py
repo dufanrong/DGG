@@ -30,10 +30,9 @@ class Node:
         }
 
 class GraphGenerator:
-    def __init__(self, service_type_directory, callgraph_directory, brother_influence_alpha = 0.5, service_types=None):
+    def __init__(self, service_type_directory, callgraph_directory, service_types=None):
         self.service_type_directory = service_type_directory
         self.callgraph_directory = callgraph_directory
-        self.brother_influence_alpha = brother_influence_alpha
         self.service_types = service_types if service_types else [0, 1, 2, 3, 4, 5]
         self.service_type_info = {} 
         self.service_targets = {} 
@@ -209,7 +208,6 @@ class GraphGenerator:
                 depth = self.calculate_depth(rpcid)
                 
                 if self.is_relay(um, depth):
-                    # if (um, depth) in brother_influence_dict and random.random() < self.brother_influence_alpha:
                     if (um, depth) in brother_influence_dict:
                         brothers = brother_influence_dict[(um, depth)]
                         targets = self.get_target_with_brother_influence(um, depth, brothers)
@@ -342,7 +340,10 @@ class GraphGenerator:
 service_type_directory = './sample_data/service_info.csv'
 callgraph_directory = './sample_data/real_call_graph_renamed'
 
-graph_gen = GraphGenerator(service_type_directory, callgraph_directory)
+n = 10000
+service_types = [0, 1, 2, 3, 4, 5]
+
+graph_gen = GraphGenerator(service_type_directory, callgraph_directory, service_types)
 graph_gen.generate_and_save_unique_graphs(n=10000,output_folder='./sample_data/DGG_gen_cgs')
 
 graph_gen.print_generated_cg_num()
