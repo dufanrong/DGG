@@ -1,0 +1,44 @@
+{
+    "nodes": [
+        {
+            "node": "USER",
+            "label": "relay"
+        },
+        {
+            "node": "MS_relay+2.1",
+            "label": "relay"
+        },
+        {
+            "node": "MS_Memcached.1",
+            "label": "Memcached"
+        },
+        {
+            "node": "MS_Memcached.2",
+            "label": "Memcached"
+        }
+    ],
+    "edges": [
+        {
+            "rpcid": "0",
+            "um": "USER",
+            "dm": "MS_relay+2.1",
+            "time": 1,
+            "compara": "http"
+        },
+        {
+            "rpcid": "0.1",
+            "um": "MS_relay+2.1",
+            "dm": "MS_Memcached.1",
+            "time": 2,
+            "compara": "mc"
+        },
+        {
+            "rpcid": "0.2",
+            "um": "MS_relay+2.1",
+            "dm": "MS_Memcached.2",
+            "time": 2,
+            "compara": "mc"
+        }
+    ],
+    "num": 899
+}

@@ -211,21 +211,12 @@ class GraphGenerator:
                     if (um, depth) in brother_influence_dict:
                         brothers = brother_influence_dict[(um, depth)]
                         targets = self.get_target_with_brother_influence(um, depth, brothers)
+                        # print("sibling set influence")
                     else:
                         targets = self.get_target(um, depth)
 
                     brother_influenced_ms = None
 
-                    for target in targets:
-                        ms = target.name
-                        if self.service_ms_influence.get((self.cur_svc, ms, depth + 1), False):
-                            brother_influenced_ms = ms
-                            break
-                    
-                    if brother_influenced_ms:
-                        brother_names = [target.name for target in targets if target.name != brother_influenced_ms]
-                        brother_influence_dict[(brother_influenced_ms, depth + 1)] = brother_names
-                    
                     for i, target in enumerate(targets):
                         compara = target.comPara
                         rpcidChild = f"{rpcid}.{i+1}"
@@ -234,6 +225,13 @@ class GraphGenerator:
                         new_node = Node(rpcidChild, um, dm, compara, time)
                         node_list.append(new_node)
                         queue.append(new_node)
+
+                    if len(targets) > 1:
+                        for target in targets:
+                            ms = target.name
+                            brother_influenced_ms = ms
+                            brother_names = [target.name for target in targets if target.name != brother_influenced_ms]
+                            brother_influence_dict[(brother_influenced_ms, depth + 1)] = brother_names
 
         return node_list
 

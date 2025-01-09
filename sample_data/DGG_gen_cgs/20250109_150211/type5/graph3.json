@@ -1,0 +1,22 @@
+{
+    "nodes": [
+        {
+            "node": "USER",
+            "label": "relay"
+        },
+        {
+            "node": "MS_blackhole.3",
+            "label": "blackhole"
+        }
+    ],
+    "edges": [
+        {
+            "rpcid": "0",
+            "um": "USER",
+            "dm": "MS_blackhole.3",
+            "time": 1,
+            "compara": "http"
+        }
+    ],
+    "num": 156
+}

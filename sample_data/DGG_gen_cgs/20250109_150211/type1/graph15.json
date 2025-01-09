@@ -1,0 +1,22 @@
+{
+    "nodes": [
+        {
+            "node": "USER",
+            "label": "relay"
+        },
+        {
+            "node": "MS_normal+2.1_func1",
+            "label": "normal"
+        }
+    ],
+    "edges": [
+        {
+            "rpcid": "0",
+            "um": "USER",
+            "dm": "MS_normal+2.1_func1",
+            "time": 1,
+            "compara": "rpc"
+        }
+    ],
+    "num": 56
+}
