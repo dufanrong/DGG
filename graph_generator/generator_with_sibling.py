@@ -191,6 +191,7 @@ class GraphGenerator:
         return set()
 
     def generate_callgraph(self):
+        generated_ms = set()
         node_list = []
         brother_influence_dict = {}
         targets = self.get_target("USER", 1)
@@ -224,7 +225,9 @@ class GraphGenerator:
                         time = target.time
                         new_node = Node(rpcidChild, um, dm, compara, time)
                         node_list.append(new_node)
-                        queue.append(new_node)
+                        if dm not in generated_ms:
+                            generated_ms.add(dm)
+                            queue.append(new_node)
 
                     if len(targets) > 1:
                         for target in targets:
