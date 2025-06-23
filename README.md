@@ -17,7 +17,7 @@ DGG consists of two main components:
 ## Overview
 ![DGG Overview](https://github.com/dufanrong/DGG/blob/main/docs/DGG_overview.png)
 
-For more details about DGG, you can read our paper: [https://arxiv.org/abs/2412.19083](https://arxiv.org/abs/2412.19083)
+For more details about DGG, you can read our paper: [https://hpcrl.github.io/ICS2025-webpage/program/Proceedings_ICS25/ics25-22.pdf)
 
 ## Quick Start
 In the `sample_data` folder, we provide real microservice call graphs constructed using Alibaba trace data. You can use this dataset directly to generate simulated dependency graphs and microservice call graphs. 
